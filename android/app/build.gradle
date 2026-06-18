@@ -84,6 +84,11 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        // react-native-capture-protection product flavor. "callbackTiramisu"
+        // also enables screen-capture detection on Android 10–13 (via the
+        // READ_MEDIA_IMAGES permission declared in AndroidManifest), matching
+        // the Expo source app's capture-protection setup.
+        missingDimensionStrategy "react-native-capture-protection", "callbackTiramisu"
     }
     signingConfigs {
         debug {
