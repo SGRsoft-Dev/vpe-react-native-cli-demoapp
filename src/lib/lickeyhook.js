@@ -2,7 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useRef, useState } from 'react';
 
 export const loadKey = () => {
-	//베타키 3376a7c72a0343fe15776f3b96375c3e
+	// 이 testKey 는 테스트 앱(testAppId: com.vpe.rn.testapp.v3) 에서만 동작합니다.
+	// 다른 앱에서 사용하려면 발급받은 본인의 accessKey / appId 로 교체하세요.
 	const [testKey, setTestKey] = useState('c4f24ab4cfba527029fa753308bbada9');
 	const [testAppId, setTestAppId] = useState('com.vpe.rn.testapp.v3');
 	const [isBeta, setIsBeta] = useState(false);
