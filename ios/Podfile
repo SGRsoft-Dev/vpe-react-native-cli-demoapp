@@ -31,5 +31,23 @@ target 'VpePlayerCliDemo' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # fmt 11.0.2 (bundled by RN 0.81) fails to compile under Xcode 26 /
+    # Apple clang 21: its consteval format-string machinery is rejected
+    # ("call to consteval function ... is not a constant expression").
+    # Force fmt onto its own non-consteval path (FMT_USE_CONSTEVAL 0) by
+    # patching the regenerated header. Idempotent; runs on every install.
+    fmt_base = File.join(__dir__, 'Pods', 'fmt', 'include', 'fmt', 'base.h')
+    if File.exist?(fmt_base)
+      contents = File.read(fmt_base)
+      marker = '#if FMT_USE_CONSTEVAL'
+      override = "#undef FMT_USE_CONSTEVAL\n#define FMT_USE_CONSTEVAL 0\n"
+      unless contents.include?(override)
+        contents = contents.sub(marker, "#{override}#{marker}")
+        File.chmod(0644, fmt_base) # headers are installed read-only
+        File.write(fmt_base, contents)
+        Pod::UI.puts '[patch] Disabled fmt consteval for Xcode 26 / clang 21 compatibility'.green
+      end
+    end
   end
 end
