@@ -1,0 +1,68 @@
+import { View, StatusBar, ScrollView, Text, Alert } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { VpePlayer } from 'vpe-react-native-cli';
+import React, { useRef, useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
+
+import { loadKey } from './lib/lickeyhook';
+export default function App() {
+	const navigation = useNavigation();
+	const lkey = loadKey();
+
+	const [isFullScreen, setIsFullScreen] = useState(false);
+	const playerRef = useRef(null);
+
+	return (
+		<SafeAreaProvider>
+			<SafeAreaView edges={isFullScreen ? ['none'] : ['top', 'left', 'right']} />
+			<StatusBar barStyle={'dark-content'} hidden={isFullScreen ? true : false} />
+
+			<VpePlayer
+				ref={playerRef}
+				devTestAppId={lkey.testAppId}
+				accessKey={lkey.testKey}
+				platform={lkey.isGov ? 'gov' : 'pub'}
+				stage={lkey.isBeta ? 'beta' : 'prod'}
+				isDev={lkey.isDev ? true : false}
+				events={{
+					backPress: () => {
+						if (navigation.canGoBack()) {
+							navigation.goBack();
+						}
+					},
+				}}
+				override={{
+					nextSource: () => {
+						Alert.alert(`nextSource`);
+					},
+					prevSource: () => {
+						Alert.alert(`prevSource`);
+					},
+					fullscreen: () => {
+						Alert.alert(`fullscreen`);
+					},
+				}}
+				options={{
+					playlist: [
+						{
+							file: 'https://m4qgahqg2249.edge.naverncp.com/hls/a4oif2oPHP-HlGGWOFm29A__/endpoint/sample/221027_NAVER_Cloud_intro_Long_ver_AVC_,FHD_2Pass_30fps,HD_2Pass_30fps,SD_2Pass_30fps,.mp4.smil/master.m3u8',
+						},
+						{
+							file: 'https://m4qgahqg2249.edge.naverncp.com/hls/a4oif2oPHP-HlGGWOFm29A__/endpoint/sample/221027_NAVER_Cloud_intro_Long_ver_AVC_,FHD_2Pass_30fps,HD_2Pass_30fps,SD_2Pass_30fps,.mp4.smil/master.m3u8',
+						},
+					],
+					autostart: true,
+					muted: true,
+				}}
+			/>
+
+			{!isFullScreen && (
+				<ScrollView style={{ backgroundColor: '#ffffff' }}>
+					<View style={{ padding: 10 }}>
+						<Text>기본 기능 오버라이드</Text>
+					</View>
+				</ScrollView>
+			)}
+		</SafeAreaProvider>
+	);
+}
