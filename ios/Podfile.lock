@@ -1893,7 +1893,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-video (6.16.1-sgrsoft.5):
+  - react-native-video (6.16.1-sgrsoft.11):
     - boost
     - DoubleConversion
     - fast_float
@@ -1911,7 +1911,7 @@ PODS:
     - React-graphics
     - React-ImageManager
     - React-jsi
-    - react-native-video/Video (= 6.16.1-sgrsoft.5)
+    - react-native-video/Video (= 6.16.1-sgrsoft.11)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-renderercss
@@ -1922,7 +1922,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-video/Fabric (6.16.1-sgrsoft.5):
+  - react-native-video/Fabric (6.16.1-sgrsoft.11):
     - boost
     - DoubleConversion
     - fast_float
@@ -1950,7 +1950,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-video/Video (6.16.1-sgrsoft.5):
+  - react-native-video/Video (6.16.1-sgrsoft.11):
     - boost
     - DoubleConversion
     - fast_float
@@ -2991,7 +2991,7 @@ SPEC CHECKSUMS:
   react-native-netinfo: cd30f7af707b4ac085374cc4896fe605d9aab51f
   react-native-orientation-locker: 5819fd23ca89cbac0d736fb4314745f62716d517
   react-native-safe-area-context: 54d812805f3c4e08a4580ad086cbde1d8780c2e4
-  react-native-video: ea13c0074d0de5f84b1d40a6e2aa72767966b108
+  react-native-video: 346eafcd352f81b23722a7ddb4c22d211c28efc4
   React-NativeModulesApple: 5497ff3f4ab94454a3aee13e94f3f5f07cc5f70a
   React-oscompat: eb0626e8ba1a2c61673c991bf9dc21834898475d
   React-perflogger: d0d0d1b884120fa0a13bd38ac5e9c3c8e8bfe82a
