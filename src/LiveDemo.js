@@ -10,6 +10,7 @@ export default function App() {
 	const lkey = loadKey();
 
 	const [isFullScreen, setIsFullScreen] = useState(false);
+	const [liveStat, setLiveStat] = useState(null);
 	StatusBar.setBarStyle('dark-content');
 
 	const playerRef = useRef(null);
@@ -35,6 +36,9 @@ export default function App() {
 					fullScreen: (data) => {
 						setIsFullScreen(data.isFullScreen);
 					},
+					timeupdate: (data) => {
+						setLiveStat(data);
+					},
 				}}
 				options={{
 					playlist: [
@@ -55,6 +59,25 @@ export default function App() {
 					<View>
 						<Text>Live 데모</Text>
 					</View>
+					{liveStat && (
+						<View style={{ marginTop: 6 }}>
+							<Text style={{ fontWeight: 'bold' }}>
+								라이브 지연{' '}
+								{liveStat.liveEdgeOffset == null
+									? '측정 불가 (PROGRAM-DATE-TIME 없음)'
+									: `${liveStat.liveEdgeOffset.toFixed(2)}초`}
+							</Text>
+							<Text style={{ color: '#666666', fontSize: 12 }}>
+								탐색 가능 구간 {liveStat.seekableDuration?.toFixed(1)}초
+							</Text>
+							<Text style={{ color: '#666666', fontSize: 12 }}>
+								재생 위치 {liveStat.currentTime?.toFixed(1)}초
+							</Text>
+							<Text style={{ color: '#666666', fontSize: 12 }}>
+								버퍼 확보량 {liveStat.playableDuration?.toFixed(1)}초
+							</Text>
+						</View>
+					)}
 				</View>
 			)}
 		</SafeAreaProvider>
