@@ -7,7 +7,7 @@ export default function () {
 			<View style={{ marginTop: 25 }}>
 				<Image
 					source={{
-						uri: 'https://tkmenfxu2702.edge.naverncp.com/profile/202508/ad97b035f8401e354291eee7b525d18a.jpg',
+						uri: 'https://player.vpe.naverncp.com/images/hq720.jpg',
 					}}
 					style={{
 						width: '100%',
@@ -24,7 +24,7 @@ export default function () {
 			<View style={{ marginTop: 15 }}>
 				<Image
 					source={{
-						uri: 'https://tkmenfxu2702.edge.naverncp.com/profile/202508/ad97b035f8401e354291eee7b525d18a.jpg',
+						uri: 'https://player.vpe.naverncp.com/images/hq720.jpg',
 					}}
 					style={{
 						width: '100%',
@@ -41,7 +41,7 @@ export default function () {
 			<View style={{ marginTop: 15 }}>
 				<Image
 					source={{
-						uri: 'https://tkmenfxu2702.edge.naverncp.com/profile/202508/ad97b035f8401e354291eee7b525d18a.jpg',
+						uri: 'https://player.vpe.naverncp.com/images/hq720.jpg',
 					}}
 					style={{
 						width: '100%',

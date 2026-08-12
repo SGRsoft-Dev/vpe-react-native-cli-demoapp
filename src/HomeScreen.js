@@ -14,7 +14,6 @@ import {
 import React, { useRef } from 'react';
 
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { SvgUri } from 'react-native-svg';
 
 export default function HomeScreen({ navigation }) {
 	return (
@@ -30,7 +29,7 @@ export default function HomeScreen({ navigation }) {
 			>
 				<ImageBackground
 					source={{
-						uri: 'https://tkmenfxu2702.edge.naverncp.com/profile/202410/41da2868a7a004663066d88117a05e99.png',
+						uri: 'https://player.vpe.naverncp.com/images/Media_1720491442089.png',
 					}}
 					style={{
 						height: 220,
@@ -57,12 +56,6 @@ export default function HomeScreen({ navigation }) {
 								}}
 							/>
 						</View>
-						<SvgUri
-							uri={
-								'https://tkmenfxu2702.edge.naverncp.com/profile/202411/915e36a9132dad3a90bd11dbdd684272.svg'
-							}
-							height={30}
-						/>
 						<View
 							style={{
 								justifyContent: 'center',

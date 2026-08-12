@@ -130,7 +130,7 @@ export default function App() {
 
 		const drmFetch = async () => {
 			try {
-				const response = await fetch('https://vpe.sgrsoft.com/api/drmTest');
+				const response = await fetch('https://vpe.page24.app/api/drmTest');
 				const data = await response.json();
 				const drmPlaylist = await prepareSource(data.playlist);
 
@@ -204,7 +204,7 @@ export default function App() {
 								<Text style={{ color: '#ffffff' }}> ⚠️ DRM 테스트는 실제 기기만 동작합니다.</Text>
 							</View>
 							<View>
-								<Text>https://vpe.sgrsoft.com/api/drmTestPallycon</Text>
+								<Text>https://vpe.page24.app/api/drmTestPallycon</Text>
 							</View>
 						</View>
 					</View>

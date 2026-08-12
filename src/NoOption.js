@@ -58,18 +58,18 @@ export default function App() {
 									created_at: '2025.08.20',
 									profile_name: '네이버클라우드',
 									profile_image:
-										'https://tkmenfxu2702.edge.naverncp.com/profile/202511/cf38c0603c57faacd99cbe6d967c38b3.png',
+										'https://player.vpe.naverncp.com/images/d127c8db642716d84b3201f1d152e52a.png',
 								},
 								vtt: [
 									{
 										id: 'ko',
-										file: 'https://vpeold.sgrsoft.com/ncp_overview_script_kr_v2.vtt',
+										file: 'https://player.vpe.naverncp.com/vtt/ncp_overview_script_kr_v2.vtt',
 										label: '한국어',
 										default: true,
 									},
 									{
 										id: 'en',
-										file: 'https://vpeold.sgrsoft.com/ncp_overview_script_en_v2.vtt',
+										file: 'https://player.vpe.naverncp.com/vtt/ncp_overview_script_en_v2.vtt',
 										label: 'English',
 									},
 								],
@@ -82,7 +82,7 @@ export default function App() {
 									created_at: '2025.08.20',
 									profile_name: '네이버클라우드',
 									profile_image:
-										'https://tkmenfxu2702.edge.naverncp.com/profile/202511/cf38c0603c57faacd99cbe6d967c38b3.png',
+										'https://player.vpe.naverncp.com/images/d127c8db642716d84b3201f1d152e52a.png',
 								},
 							},*/
 						],

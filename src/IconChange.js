@@ -40,77 +40,77 @@ export default function App() {
 					icon: {
 						bigPlay: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/youtube-logo-fill.svg`}
+								uri={`https://vpe.page24.app/svg/material/youtube-logo-fill.svg`}
 								height={50}
 								width={50}
 							/>
 						),
 						play: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/play_arrow_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/play_arrow_white_24dp.svg`}
 								height={40}
 								width={40}
 							/>
 						),
 						pause: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/pause_black_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/pause_black_24dp.svg`}
 								height={40}
 								width={40}
 							/>
 						),
 						prev: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/skip_previous_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/skip_previous_white_24dp.svg`}
 								height={40}
 								width={40}
 							/>
 						),
 						next: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/skip_next_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/skip_next_white_24dp.svg`}
 								height={40}
 								width={40}
 							/>
 						),
 						replay: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/replay_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/replay_white_24dp.svg`}
 								height={40}
 								width={40}
 							/>
 						),
 						subtitle: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/subtitles_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/subtitles_white_24dp.svg`}
 								height={22}
 								width={22}
 							/>
 						),
 						subtitleOff: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/subtitles_off_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/subtitles_off_white_24dp.svg`}
 								height={22}
 								width={22}
 							/>
 						),
 						fullscreen: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/fullscreen_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/fullscreen_white_24dp.svg`}
 								height={22}
 								width={22}
 							/>
 						),
 						fullscreenExit: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/fullscreen_exit_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/fullscreen_exit_white_24dp.svg`}
 								height={22}
 								width={22}
 							/>
 						),
 						setting: () => (
 							<SvgUri
-								uri={`https://vpe.sgrsoft.com/svg/material/settings_white_24dp.svg`}
+								uri={`https://vpe.page24.app/svg/material/settings_white_24dp.svg`}
 								height={22}
 								width={22}
 							/>
@@ -125,18 +125,18 @@ export default function App() {
 								created_at: '2025.08.20',
 								profile_name: '네이버클라우드',
 								profile_image:
-									'https://tkmenfxu2702.edge.naverncp.com/profile/202511/cf38c0603c57faacd99cbe6d967c38b3.png',
+									'https://player.vpe.naverncp.com/images/d127c8db642716d84b3201f1d152e52a.png',
 							},
 							vtt: [
 								{
 									id: 'ko',
-									file: 'https://vpe.sgrsoft.com/ncp_overview_script_kr_v2.vtt',
+									file: 'https://player.vpe.naverncp.com/vtt/ncp_overview_script_kr_v2.vtt',
 									label: '한국어',
 									default: true,
 								},
 								{
 									id: 'en',
-									file: 'https://vpe.sgrsoft.com/ncp_overview_script_en_v2.vtt',
+									file: 'https://player.vpe.naverncp.com/vtt/ncp_overview_script_en_v2.vtt',
 									label: 'English',
 								},
 							],
@@ -149,7 +149,7 @@ export default function App() {
 								created_at: '2025.08.20',
 								profile_name: '네이버클라우드',
 								profile_image:
-									'https://tkmenfxu2702.edge.naverncp.com/profile/202511/cf38c0603c57faacd99cbe6d967c38b3.png',
+									'https://player.vpe.naverncp.com/images/d127c8db642716d84b3201f1d152e52a.png',
 							},
 						},
 					],
