@@ -7,6 +7,6 @@ ruby '>= 2.6.10'
 gem 'cocoapods', '>= 1.13', '!= 1.15.0', '!= 1.15.1'
 gem 'activesupport', '>= 6.1.7.5', '!= 7.1.0'
 
-# Ruby 2.7 compatibility: ffi >= 1.17 and concurrent-ruby >= 1.4 drop Ruby 2.7.
+# macOS 시스템 Ruby(2.6.10) 호환: ffi >= 1.17 / concurrent-ruby >= 1.4 는 2.7 이하를 버림.
 gem 'ffi', '< 1.17'
 gem 'concurrent-ruby', '< 1.4'
